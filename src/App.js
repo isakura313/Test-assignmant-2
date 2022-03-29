@@ -1,4 +1,5 @@
 import styled, {createGlobalStyle} from "styled-components"
+import TopText from "./components/Top-text";
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -8,7 +9,9 @@ background-color: black;
 
 function App() {
   return (
-    <AppWrapper/>
+    <AppWrapper>
+      <TopText />
+      </AppWrapper>
   );
 }
 
