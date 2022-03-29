@@ -1,5 +1,7 @@
 import styled, {createGlobalStyle} from "styled-components"
 import TopText from "./components/Top-text";
+import Flex from "./components/Flex";
+
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -10,7 +12,10 @@ background-color: purple;
 function App() {
   return (
     <AppWrapper>
+      <Flex justify = "center">
       <TopText color = {"red"} >Top</TopText>
+      </Flex>
+      
       </AppWrapper>
   );
 }
