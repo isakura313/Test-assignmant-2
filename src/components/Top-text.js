@@ -1,16 +1,17 @@
 import React from 'react'
 import styled, {createGlobalStyle} from "styled-components"
 
-const StyleTopText = styled.div`
+const StyledTopText = styled.div`
 height: 100px;
 width: 100px;
-background-color: white
+background-color: white;
+color: ${props => props.color};
 `
-function TopText() {
+function TopText({children, color}) {
     return (
-        <StyleTopText>
-
-        </StyleTopText>
+        <StyledTopText color={color}>
+            {children}
+        </StyledTopText>
     )
 }
 

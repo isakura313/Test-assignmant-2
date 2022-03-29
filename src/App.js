@@ -4,13 +4,13 @@ import TopText from "./components/Top-text";
 const AppWrapper = styled.div`
 width: 100%;
 height: 100vh;
-background-color: black;
+background-color: purple;
 `
 
 function App() {
   return (
     <AppWrapper>
-      <TopText />
+      <TopText color = {"red"} >Top</TopText>
       </AppWrapper>
   );
 }
