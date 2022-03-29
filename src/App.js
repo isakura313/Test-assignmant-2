@@ -13,7 +13,8 @@ function App() {
   return (
     <AppWrapper>
       <Flex justify = "center">
-      <TopText color = {"red"} >Top</TopText>
+      <TopText marginTop = {"64px"} width = {"32%"}>Наши топ-блогеры</TopText>
+
       </Flex>
       
       </AppWrapper>

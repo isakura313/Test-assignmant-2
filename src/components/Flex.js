@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledFlex = styled.div`
 display: flex;
-flex-direction: ${props => props.direction || "row"};
+flex-direction: column;
 align-items: ${props => props.align || "stretch"};
 justify-content: ${props => props.justify || "row"};
 margin: ${props => props.margin || "0"};
