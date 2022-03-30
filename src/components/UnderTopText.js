@@ -3,10 +3,9 @@ import styled, {createGlobalStyle} from "styled-components"
 
 const StyledUnderTopText = styled.div`
 background-color: white;
-margin-top: ${props => props.marginTop || "27px"};
-margin-left: 385px;
+margin: ${props => props.margin || "27px 0 0 385px"};
 width: 194px;
-text-align: ${props => props.textAlign || "center"};
+text-align: "start";
 font-size: 24px;
 color: rgba(56, 71, 88, 1);
 font-weight: 500;

@@ -3,8 +3,7 @@ import styled, {createGlobalStyle} from "styled-components"
 
 const StyledTopText = styled.div`
 background-color: white;
-margin: auto;
-margin-top: ${props => props.marginTop || "0"};
+margin: ${props => props.margin || "64px auto auto auto"};
 width: ${props => props.width};
 text-align: ${props => props.textAlign || "center"};
 font-size: 48px;

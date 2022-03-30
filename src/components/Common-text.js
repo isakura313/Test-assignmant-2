@@ -3,16 +3,15 @@ import styled from "styled-components"
 
 const StyledTopText = styled.div`
 background-color: white;
-margin: auto;
-margin-top: ${props => props.marginTop || "0"};
+margin: ${props => props.margin || "47px auto auto auto"};
 width: ${props => props.width};
-text-align: center;
-font-size: 18px;
-color: rgba(56, 71, 88, 1);
+text-align: ${props => props.textAlign || "center"};
+font-size: ${props => props.fontSize || "18px"};
+color: rgba(96, 111, 129, 1);
 font-weight: 400;
 font-family: 'Poppins';
 font-style: normal;
-line-height: 27px;
+line-height: ${props => props.lineHeight || "27px"};
 `
 function CommonText({children, ...props}) {
     return (
