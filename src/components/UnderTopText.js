@@ -2,7 +2,7 @@ import React from 'react'
 import styled, {createGlobalStyle} from "styled-components"
 
 const StyledUnderTopText = styled.div`
-background-color: white;
+
 margin: ${props => props.margin || "27px 0 0 385px"};
 width: 194px;
 text-align: "start";

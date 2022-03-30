@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 
 const StyledTopText = styled.div`
-background-color: white;
+
 margin: ${props => props.margin || "47px auto auto auto"};
 width: ${props => props.width};
 text-align: ${props => props.textAlign || "center"};
