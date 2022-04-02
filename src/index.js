@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import styled, {createGlobalStyle} from "styled-components"
+import "./slick/slick.css"
+import "./slick/slick-theme.css"
 
 const GlobalStyle = createGlobalStyle`
 * {
