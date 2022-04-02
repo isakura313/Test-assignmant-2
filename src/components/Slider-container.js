@@ -7,7 +7,7 @@ z-index: 5;
 
 width: 87%;
 min-width: 500px;
-height: 437px;
+height: 467px;
 border: 1px solid black;
 margin: 30px auto auto 61px;
 `

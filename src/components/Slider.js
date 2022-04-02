@@ -20,7 +20,31 @@ height: 320px;
 width: 290px;
 
 `
+const UserName = styled.span`
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+margin-top: 19px;
+text-align: center;
+display: inline-block;
+color: #384758;
 
+`
+const UserSkills = styled.text`
+text-align: center;
+display: inline-block;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+color: #606F81;
+padding: 0;
+margin-top: -5px;
+`
 
 const PreviousButton = styled.button`
 background-image: url(${arrow1});
@@ -54,7 +78,7 @@ class SimpleSlider extends Component {
 
   render() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -74,33 +98,53 @@ class SimpleSlider extends Component {
         <Slider ref={c => (this.slider = c)} {...settings}>
            <div>  {/*<div key={1}>*/}
            <img width = {"290px"} height={"320px"} src={portrait1} alt="arrow" />
+           <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait2} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait3} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait4} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>  {/*<div key={1}>*/}
            <img width = {"290px"} height={"320px"} src={portrait5} alt="arrow" />
+           <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait6} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait7} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait8} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>  {/*<div key={1}>*/}
            <img width = {"290px"} height={"320px"} src={portrait9} alt="arrow" />
+           <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
           <div>
           <img width = {"290px"} height={"320px"} src={portrait10} alt="arrow" />
+          <UserName>Name</UserName> <br></br>
+           <UserSkills>Technology</UserSkills>
           </div>
         </Slider>
       </div>
