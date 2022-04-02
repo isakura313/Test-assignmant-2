@@ -38,9 +38,9 @@ function App() {
     <AppWrapper>
       <Flex justify = "center">
       <TopText marginTop = {"64px"} width = {"32%"}>Наши топ-блогеры</TopText>
-      <CommonText width = {"28%"}>Лучше специалисты в своем деле, 
-средний опыт работы в профессии - 27 лет</CommonText>
-      <Arrows marginTop = {"31px"} />
+      <CommonText width = {"28%"}>Лучше специалисты в своем деле, <br></br>
+      средний опыт работы в профессии - 27 лет</CommonText>
+      {/* <Arrows marginTop = {"31px"} /> */}
       <Square margin={"-636px 0 0 1352px"}/>
       <Ellipse />
       <SliderContainer>
