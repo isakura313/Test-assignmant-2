@@ -20,7 +20,7 @@ background-image: url(${commasImage});
 height: 78px;
 width: 100px;
 display: block;
-margin-left: 251px;
+margin-left: 17.43%;
 `
 
 const Ellipse = styled.div`
@@ -48,25 +48,25 @@ function App() {
       </SliderContainer>
       <Flex margin={"51px 0 0 0"} justify = "start" height={"78px"} align={"center"} direction={"row"}>
       <Commas />
-      <TopText margin = {"0 0 0 34px"} textAlign = {"start"} width = {"66.38%"} height={"78px"}>
+      <TopText margin = {"0 0 0 2.36%"} textAlign = {"start"} width = {"66.38%"} height={"78px"}>
         3 актуальных поста Moriah.Stanton
         </TopText>
       </Flex>
       
       <UnderTopText>Заголовок поста</UnderTopText>
-      <CommonText margin = {"7px 0 0 385px"} width = {"959px"} textAlign = {"start"}>
+      <CommonText margin = {"7px 0 0 26.73%"}  width = {"66.57%"} textAlign = {"start"} fontSize={"20px"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec platea ipsum ornare interdum. 
         Aliquet metus suscipit ornare aliquet accumsan, massa risus quisque ac. Pellentesque risus mauris mattis viverra amet sed elit. 
         Pellentesque dui vitae amet diam convallis nisi nec.
         </CommonText>
-        <UnderTopText margin = {"19px 0 0 385px"}>Заголовок поста</UnderTopText>
-      <CommonText margin = {"7px 0 0 385px"} width = {"959px"} textAlign = {"start"}>
+        <UnderTopText margin = {"19px 0 0 26.73%"}>Заголовок поста</UnderTopText>
+      <CommonText margin = {"7px 0 0 26.73%"}  width = {"66.57%"} textAlign = {"start"} fontSize={"20px"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec platea ipsum ornare interdum. 
         Aliquet metus suscipit ornare aliquet accumsan, massa risus quisque ac. Pellentesque risus mauris mattis viverra amet sed elit. 
         Pellentesque dui vitae amet diam convallis nisi nec.
         </CommonText>
-        <UnderTopText margin = {"19px 0 0 385px"}>Заголовок поста</UnderTopText>
-      <CommonText margin = {"7px 0 125px 385px"} width = {"959px"} textAlign = {"start"}>
+        <UnderTopText margin = {"19px 0 0 26.73%"}>Заголовок поста</UnderTopText>
+      <CommonText margin = {"7px 0 125px 26.73%"} width = {"66.57%"} textAlign = {"start"} fontSize={"20px"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec platea ipsum ornare interdum. 
         Aliquet metus suscipit ornare aliquet accumsan, massa risus quisque ac. Pellentesque risus mauris mattis viverra amet sed elit. 
         Pellentesque dui vitae amet diam convallis nisi nec.

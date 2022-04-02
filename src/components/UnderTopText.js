@@ -3,8 +3,8 @@ import styled, {createGlobalStyle} from "styled-components"
 
 const StyledUnderTopText = styled.div`
 
-margin: ${props => props.margin || "27px 0 0 385px"};
-width: 194px;
+margin: ${props => props.margin || "27px 0 0 26.73%"};
+width: 13.47%;
 text-align: "start";
 font-size: 24px;
 color: rgba(56, 71, 88, 1);

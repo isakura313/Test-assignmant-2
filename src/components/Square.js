@@ -8,11 +8,11 @@ const StyledSquare = styled.div`
 margin: ${props => props.margin || "48% 0 0 9px"};
 position: absolute;
 height: 201px;
-width: 201px;
+width: 13.95%;
 z-index: 3;
 display: grid;
-column-gap: 9px;
-row-gap: 9px;
+column-gap: 4.477%;
+row-gap: 4.477%;
 grid-template-columns: repeat(16, 1fr)
 `
 function Square({ ...props}) {

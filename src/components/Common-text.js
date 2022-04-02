@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledTopText = styled.div`
 
-margin: ${props => props.margin || "47px auto auto auto"};
+margin: ${props => props.margin || "47px auto auto 33%"};
 width: ${props => props.width};
 text-align: ${props => props.textAlign || "center"};
 font-size: ${props => props.fontSize || "18px"};

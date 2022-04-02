@@ -4,7 +4,7 @@ import styled, {createGlobalStyle} from "styled-components"
 const StyledTopText = styled.div`
 display: inlin-block;
 
-margin: ${props => props.margin || "64px auto auto auto"};
+margin: ${props => props.margin || "64px auto auto 32.56%"};
 width: ${props => props.width};
 text-align: ${props => props.textAlign || "center"};
 font-size: 48px;
