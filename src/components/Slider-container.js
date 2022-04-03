@@ -11,10 +11,13 @@ border: 1px solid black;
 margin: 31px auto auto 4.2%;
 `
 
-function SliderContainer() {
+function SliderContainer(props) {
+    const handleClick = (e) =>{
+        props.handle(e)
+    }
     return(
         <StyledSliderContainer>
-            <SimpleSlider></SimpleSlider>
+            <SimpleSlider handleClick={handleClick}></SimpleSlider>
         </StyledSliderContainer>
     )
 }
