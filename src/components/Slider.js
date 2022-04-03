@@ -53,13 +53,14 @@ cursor: pointer;
 `
 
 const UserPic = styled.div`
-background-image: url(${id1});
+background-image: url(${props => props.srcimg});
 background-size: cover;
 width: 290px;
 height: 320px;
 // border: 5px solid orange;
 margin: 20px auto auto auto;
-border-bottom: ${props => props.border};
+border-bottom: ${props => props.borderBottom};
+cursor: pointer;
 `
 
 
@@ -127,8 +128,6 @@ class SimpleSlider extends Component {
                 items: result
               });
             },
-            // Примечание: важно обрабатывать ошибки именно здесь, а не в блоке catch(),
-            // чтобы не перехватывать исключения из ошибок в самих компонентах.
             (error) => {
               this.setState({
                 isLoaded: true,
@@ -139,13 +138,21 @@ class SimpleSlider extends Component {
       }
 
         handleClick(event){
+
+          console.log(event.target.id)
+          var y = event.target.id
+          var x = document.getElementById(y)
+          console.log(x)
           this.setState({
             border: "5px solid rgba(254, 135, 0, 1)",
             color: "rgba(254, 135, 0, 1)"
+            
         })
-        // event.target.style.borderBottom = "5px solid rgba(254, 135, 0, 1)";
-        //   console.log(this.state.border, event.target)
+        
+        console.log(this.state.border)
          }
+
+
       next() {
         this.slider.slickNext();
       }
@@ -210,14 +217,23 @@ if (error) {
                    ))}  */}
                
             <div>  
-           <img style={{ margin: "20px auto auto auto", cursor: "pointer", backgroundSize: "cover"}} width = {"290px"} height={"320px"} src={id1} alt="userpic" />
-           <UserName>{this.state.items[0].name}</UserName> <br></br>
-           <UserSkills>{this.state.items[0].username}</UserSkills>
+           {/* <img borderBottom={this.state.border} onClick = {this.handleClick} style={{ margin: "20px auto auto auto", cursor: "pointer", backgroundSize: "cover"}} width = {"290px"} height={"320px"} src={id1} alt="userpic" /> */}
+           <UserPic id = "1" borderBottom={this.state.border} className={"wassup"} onClick = {this.handleClick} srcimg = {id1}>
+
+           </UserPic>
+           <UserName id = "1" color = {this.state.color} onClick = {this.handleClick}>
+             {this.state.items[0].name}
+             </UserName> <br></br>
+
+           <UserSkills id = "1" color = {this.state.color} onClick = {this.handleClick}>
+             {this.state.items[0].username}
+             </UserSkills>
+
           </div>
           <div>
-          <img style={{ margin: "20px auto auto auto"}} width = {"290px"} height={"320px"} src={id2} alt="userpic" />
-          <UserName>{this.state.items[1].name}</UserName> <br></br>
-           <UserSkills>{this.state.items[1].username}</UserSkills>
+          <UserPic borderBottom={this.state.border} className={"wassup"} onClick = {this.handleClick} srcimg = {id2}></UserPic>
+          <UserName id = "2" color = {this.state.color} onClick = {this.handleClick}>{this.state.items[1].name}</UserName> <br></br>
+           <UserSkills id = "1" color = {this.state.color} onClick = {this.handleClick}>{this.state.items[1].username}</UserSkills>
           </div>
           <div>
           <img style={{ margin: "20px auto auto auto", backgroundSize: "cover"}} width = {"290px"} height={"320px"} src={id3} alt="userpic" />
