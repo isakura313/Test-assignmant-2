@@ -9,6 +9,7 @@ import ellipseImage from "../src/svg/ellipse.svg"
 
 import Arrows from "./components/Arrows";
 import SliderContainer from "./components/Slider-container";
+import SimpleSlider from "./components/Slider";
 
 const AppWrapper = styled.div`
 width: 100%;
@@ -44,7 +45,7 @@ function App() {
       <Square margin={"-636px 0 0 1352px"}/>
       <Ellipse />
       <SliderContainer>
-
+      <SimpleSlider />
       </SliderContainer>
       <Flex margin={"51px 0 0 0"} justify = "start" height={"78px"} align={"center"} direction={"row"}>
       <Commas />
