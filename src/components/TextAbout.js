@@ -45,21 +45,15 @@ export default function TextAbout(props){
     
     <UnderTopText>{props.posts[0].title}</UnderTopText>
     <CommonText margin = {"7px 0 0 26.73%"}  width = {"66.57%"} textAlign = {"start"} fontSize={"20px"}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec platea ipsum ornare interdum. 
-      Aliquet metus suscipit ornare aliquet accumsan, massa risus quisque ac. Pellentesque risus mauris mattis viverra amet sed elit. 
-      Pellentesque dui vitae amet diam convallis nisi nec.
+    {props.posts[0].body}
       </CommonText>
       <UnderTopText margin = {"19px 0 0 26.73%"}>{props.posts[1].title}</UnderTopText>
     <CommonText margin = {"7px 0 0 26.73%"}  width = {"66.57%"} textAlign = {"start"} fontSize={"20px"}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec platea ipsum ornare interdum. 
-      Aliquet metus suscipit ornare aliquet accumsan, massa risus quisque ac. Pellentesque risus mauris mattis viverra amet sed elit. 
-      Pellentesque dui vitae amet diam convallis nisi nec.
+    {props.posts[1].body}
       </CommonText>
       <UnderTopText margin = {"19px 0 0 26.73%"}>{props.posts[2].title}</UnderTopText>
     <CommonText margin = {"7px 0 125px 26.73%"} width = {"66.57%"} textAlign = {"start"} fontSize={"20px"}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis nec platea ipsum ornare interdum. 
-      Aliquet metus suscipit ornare aliquet accumsan, massa risus quisque ac. Pellentesque risus mauris mattis viverra amet sed elit. 
-      Pellentesque dui vitae amet diam convallis nisi nec.
+    {props.posts[2].body}
       </CommonText>
     </React.Fragment>)
     } else{

@@ -12,6 +12,8 @@ import SliderContainer from "./components/Slider-container";
 import SimpleSlider from "./components/Slider";
 import TextAbout from './components/TextAbout';
 import axios from 'axios';
+import './App.css';
+
 const AppWrapper = styled.div`
 width: 100%;
 height: 100%;
@@ -56,7 +58,6 @@ function App() {
 
   return (
     <AppWrapper>
-      <h1>    {currentUser}</h1>
       <Flex justify = "center">
       <TopText marginTop = {"64px"} width = {"32%"}>Наши топ-блогеры</TopText>
       <CommonText width = {"28%"}>Лучше специалисты в своем деле, <br></br>
@@ -69,12 +70,8 @@ function App() {
       </SliderContainer>
 
       <Flex margin={"51px 0 0 0"} justify = "start" height={"78px"} align={"center"} direction={"row"}>
-      <Commas />
-      {/* <TopText margin = {"0 0 0 2.36%"} textAlign = {"start"} width = {"66.38%"} height={"78px"}>
-        3 актуальных поста Moriah.Stanton
-        </TopText> */}
       </Flex>
-      
+
        <TextAbout  posts={posts}/>
         <Square />
 

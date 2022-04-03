@@ -64,8 +64,7 @@ cursor: pointer;
  function SliderItems(props){
  
      // через выделять через клик
-   const list =  props.items.map((item, index)=>{
-       return( <div key={index} className={"sliderItem"}>
+    props.items.map((item, index)=> <div key={index} className={"sliderItem"}>
         <UserPic
           id={index}
         //   borderBottom={state.border}
@@ -92,13 +91,6 @@ cursor: pointer;
           {item.username}{" "}
         </UserSkills>
       </div>)
-    })
-    console.log(list)
-    return (
-        <React.Fragment>
-            {list}
-        </React.Fragment>
-    )
-    
+  
 }
 export default SliderItems;

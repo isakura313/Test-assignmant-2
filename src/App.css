@@ -1,0 +1,7 @@
+.active {
+    border: 5px solid orange;
+}
+
+.wassup {
+    border: 5px solid none;
+}
